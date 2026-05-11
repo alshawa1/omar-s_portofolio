@@ -15,6 +15,9 @@
 </head>
 <body>
 
+    <!-- Mobile nav toggle button -->
+    <i class="fas fa-bars mobile-nav-toggle d-xl-none" id="mobile-nav-toggle"></i>
+
     <!-- Sidebar Header -->
     <header id="header">
         <div class="d-flex flex-column">
@@ -216,7 +219,26 @@
     <!-- Typing Script & Data Canvas Logic -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        // Typing Effect
+        // Mobile Nav Toggle
+        const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+        if (mobileNavToggle) {
+            mobileNavToggle.addEventListener('click', function(e) {
+                document.body.classList.toggle('mobile-nav-active');
+                this.classList.toggle('fa-bars');
+                this.classList.toggle('fa-times');
+            });
+        }
+
+        // Close mobile nav on click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (document.body.classList.contains('mobile-nav-active')) {
+                    document.body.classList.remove('mobile-nav-active');
+                    mobileNavToggle.classList.toggle('fa-bars');
+                    mobileNavToggle.classList.toggle('fa-times');
+                }
+            });
+        });
         const typed = document.querySelector('.typed');
         if (typed) {
             let typed_items = typed.getAttribute('data-typed-items');
