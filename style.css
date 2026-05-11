@@ -168,6 +168,22 @@ body {
     background-color: var(--primary);
 }
 
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    #hero p {
+        font-size: 20px;
+    }
+    #hero {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
 @media (min-width: 1200px) {
     .mobile-nav-toggle {
         display: none;
