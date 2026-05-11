@@ -3,315 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Gamal | AI Researcher & Data Scientist Portfolio</title>
-    <meta name="description" content="Portfolio of Omar Gamal, an AI Researcher and Data Scientist specializing in Financial Intelligence, Logistics, and NLP.">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Vendor CSS Files -->
+    <title>Omar Gamal | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Mobile nav toggle button -->
     <i class="fas fa-bars mobile-nav-toggle d-xl-none" id="mobile-nav-toggle"></i>
-
-    <!-- Sidebar Header -->
     <header id="header">
-        <div class="d-flex flex-column">
-            <div class="profile">
-                <img src="profile.jpeg" alt="Omar Gamal" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html">Omar Gamal</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://www.linkedin.com/in/omar-gamal-80407a27b" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+        <div class="profile">
+            <img src="profile.jpeg" alt="Omar Gamal">
+            <h1><a href="index.html">Omar Gamal</a></h1>
+            <div class="social-links mt-3 text-center">
+                <a href="https://www.linkedin.com/in/omar-gamal-80407a27b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
-
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="fas fa-user"></i> <span>About</span></a></li>
-                    <li><a href="#portfolio" class="nav-link scrollto"><i class="fas fa-th"></i> <span>Portfolio</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
-                    <li class="mt-4"><a href="omar's cv.pdf" download class="nav-link" target="_blank" style="background: var(--primary); color: var(--bg-dark); border-radius: 5px; padding: 10px 15px;"><i class="fas fa-download" style="color: var(--bg-dark);"></i> <span>Get Resume</span></a></li>
-                </ul>
-            </nav>
         </div>
-        
-        <div class="sidebar-footer">
-            <p>&copy; Copyright <b>Al$hawa</b><br>Designed by <b>Omar Gamal</b></p>
-        </div>
+        <nav id="navbar" class="nav-menu">
+            <ul>
+                <li><a href="#hero" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fas fa-th"></i> <span>Portfolio</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+                <li class="mt-4"><a href="omar's cv.pdf" download class="nav-link" style="background: var(--primary); color: var(--bg-dark); border-radius: 5px; padding: 10px 15px;"><i class="fas fa-download"></i> <span>Get Resume</span></a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Data Background Canvas -->
     <canvas id="data-canvas"></canvas>
-
     <main id="main">
-
-        <!-- Hero Section -->
-        <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-            <div class="hero-container" data-aos="fade-in">
+        <section id="hero">
+            <div class="hero-container">
                 <h1>Omar Gamal</h1>
-                <p>I'm <span class="typed" data-typed-items="Data Scientist, AI Researcher, Data Analyst, Business Intelligence Expert"></span></p>
+                <p>I'm <span class="typed" data-typed-items="Data Scientist, AI Researcher, Data Analyst"></span></p>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+        <section id="about">
             <div class="container">
-                <div class="section-title">
-                    <h2>About Me</h2>
-                    <p>I am <strong>Omar Gamal</strong>, a Business Analytics graduate from the <strong>Egyptian Russian University (ERU)</strong>. As a dedicated AI Researcher and Data Scientist, I specialize in bridging the gap between technical complexity and business value.</p>
-                </div>
+                <div class="section-title"><h2>About Me</h2></div>
                 <div class="about-content">
-                    <p>Throughout my journey, I have successfully executed a wide array of real-world projects, spanning from advanced university research to professional freelance consultancy. My work focuses on <strong>Data Analysis, Machine Learning, and Business Intelligence</strong>—creating sophisticated reports and predictive models that empower organizations to make data-driven decisions.</p>
-                </div>
-
-                <div class="section-title mt-5">
-                    <h3>Technical Skills</h3>
+                    <p>Business Analytics graduate specializing in bridging the gap between technical complexity and business value through Data Science and AI.</p>
                 </div>
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Data Science & ML</h3>
-                        <p>Python, Scikit-learn, NLP, XAI, Anomaly Detection, BERT, Predictive Modeling</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Analytics & BI</h3>
-                        <p>Power BI (Advanced DAX), SQL, Streamlit, Monte Carlo, Markov Chains</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Engineering</h3>
-                        <p>SQL, PostgreSQL, Supabase, Data Pipelines, ETL, Git, Advanced Excel</p>
-                    </div>
-                </div>
-
-                <div class="section-title mt-5">
-                    <h3>Languages</h3>
-                </div>
-                <div class="about-content">
-                    <p><strong>Arabic:</strong> Native Speaker | <strong>English:</strong> Intermediate Speaker</p>
+                    <div class="skill-card"><h3>Data Science</h3><p>Python, ML, NLP, BERT, Predictive Modeling</p></div>
+                    <div class="skill-card"><h3>Analytics</h3><p>Power BI, SQL, Streamlit, Monte Carlo</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio">
             <div class="container">
-                <div class="section-title">
-                    <h2>Portfolio & Experience</h2>
-                    <p>A collection of my professional projects and data-driven solutions.</p>
-                </div>
-
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Stock IQ — AI Finance</h3>
-                        <p>Valuation and manipulation detection platform using ML & NLP.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Smart Logistics AI</h3>
-                        <p>Relational DB architecture and ML for route optimization.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Retail Intelligence</h3>
-                        <p>Market Basket Analysis for optimized cross-selling.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Telecom Risk Modeling</h3>
-                        <p>Markov Chains and Monte Carlo for CLV forecasting.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>MultiTox Research</h3>
-                        <p>4.6M records dataset for multilingual toxicity detection.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>ICSDS Research Paper</h3>
-                        <p>NLP research published at Cairo University (58th ICSDS).</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>FPL AI Predictor</h3>
-                        <p>Predictive system for player stats and team selection.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>CyberDetect Dashboard</h3>
-                        <p>Risk management system for ML development pipelines.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Sales & Ops Analytics</h3>
-                        <p>Identifying inefficiencies and monitoring strategic KPIs.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Electronic Sales Trends</h3>
-                        <p>Analyzing customer behavior to enhance marketing.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Real Estate Insights</h3>
-                        <p>Cleaning and modeling datasets for investor reporting.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>IT Performance Analysis</h3>
-                        <p>KPI analysis and operational bottleneck identification.</p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Education Analytics</h3>
-                        <p>Interactive dashboard for student performance monitoring.</p>
-                    </div>
-                </div>
-
-                <div class="section-title mt-5">
-                    <h3>Visual Dashboards</h3>
-                </div>
+                <div class="section-title"><h2>Portfolio</h2></div>
                 <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <img src="sales_dashboard.png" alt="Sales Dashboard">
-                        <div class="portfolio-info"><h4>Sales Analytics</h4></div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="real_estate_dashboard.png" alt="Real Estate Dashboard">
-                        <div class="portfolio-info"><h4>Real Estate Insights</h4></div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="customers_dashboard.png" alt="Customer Dashboard">
-                        <div class="portfolio-info"><h4>Customer Behavior</h4></div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="delivery_dashboard.png" alt="Delivery Dashboard">
-                        <div class="portfolio-info"><h4>Delivery Operations</h4></div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="student_performance.png" alt="Education Dashboard">
-                        <div class="portfolio-info"><h4>Education Performance</h4></div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="technogo_dashboard.png" alt="TECHNOGO Dashboard">
-                        <div class="portfolio-info"><h4>E-commerce Insights</h4></div>
-                    </div>
+                    <div class="portfolio-item"><img src="sales_dashboard.png"></div>
+                    <div class="portfolio-item"><img src="real_estate_dashboard.png"></div>
+                    <div class="portfolio-item"><img src="customers_dashboard.png"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <section id="contact">
             <div class="container">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                </div>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>og43799@gmail.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>01097676705</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fab fa-linkedin"></i>
-                        <p>Omar Gamal</p>
-                    </div>
-                </div>
+                <div class="section-title"><h2>Contact</h2></div>
+                <p>Email: og43799@gmail.com | Phone: 01097676705</p>
             </div>
         </section>
-
     </main>
 
-    <!-- Typing Script & Data Canvas Logic -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        // Mobile Nav Toggle
         const mobileNavToggle = document.getElementById('mobile-nav-toggle');
         if (mobileNavToggle) {
-            mobileNavToggle.addEventListener('click', function(e) {
-                document.body.classList.toggle('mobile-nav-active');
-                this.classList.toggle('fa-bars');
-                this.classList.toggle('fa-times');
-            });
+            mobileNavToggle.addEventListener('click', () => document.body.classList.toggle('mobile-nav-active'));
         }
-
-        // Close mobile nav on click
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                if (document.body.classList.contains('mobile-nav-active')) {
-                    document.body.classList.remove('mobile-nav-active');
-                    mobileNavToggle.classList.toggle('fa-bars');
-                    mobileNavToggle.classList.toggle('fa-times');
-                }
-            });
+        document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => document.body.classList.remove('mobile-nav-active')));
+        
+        new Typed('.typed', {
+            strings: document.querySelector('.typed').getAttribute('data-typed-items').split(','),
+            loop: true, typeSpeed: 100, backSpeed: 50
         });
-        const typed = document.querySelector('.typed');
-        if (typed) {
-            let typed_items = typed.getAttribute('data-typed-items');
-            typed_items = typed_items.split(',');
-            new Typed('.typed', {
-                strings: typed_items,
-                loop: true,
-                typeSpeed: 100,
-                backSpeed: 50,
-                backDelay: 2000
-            });
-        }
 
-        // Data Background Logic (Binary/Data Stream)
         const canvas = document.getElementById('data-canvas');
         const ctx = canvas.getContext('2d');
-
-        let width, height, columns;
-        const fontSize = 16;
-        let drops = [];
-
+        let width, height, columns, drops = [];
         function resize() {
             width = canvas.width = window.innerWidth - (window.innerWidth > 1199 ? 300 : 0);
             height = canvas.height = window.innerHeight;
-            columns = Math.floor(width / fontSize);
-            drops = [];
+            columns = Math.floor(width / 16);
             for (let i = 0; i < columns; i++) drops[i] = 1;
         }
-
-        window.addEventListener('resize', resize);
-        resize();
-
-        const binary = "01010101010101010101";
-        const chars = binary.split("");
-
+        window.addEventListener('resize', resize); resize();
         function draw() {
-            ctx.fillStyle = 'rgba(2, 6, 23, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            ctx.fillStyle = 'rgba(0, 242, 254, 0.15)'; /* More subtle binary color */
-            ctx.font = fontSize + 'px Outfit';
-
+            ctx.fillStyle = 'rgba(2, 6, 23, 0.05)'; ctx.fillRect(0, 0, width, height);
+            ctx.fillStyle = 'rgba(0, 242, 254, 0.15)'; ctx.font = '16px Outfit';
             for (let i = 0; i < drops.length; i++) {
-                const text = chars[Math.floor(Math.random() * chars.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
+                ctx.fillText(Math.floor(Math.random()*2), i * 16, drops[i] * 16);
+                if (drops[i] * 16 > height && Math.random() > 0.975) drops[i] = 0;
                 drops[i]++;
             }
         }
-
         setInterval(draw, 33);
-
-        // Active Nav link on scroll
-        const navLinks = document.querySelectorAll('.nav-link');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-        });
     </script>
 </body>
 </html>
